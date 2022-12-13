@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  padding: 20px;
+}
+
+.Demo__some-network {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.Demo__some-network__share-count {
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: visible;
+  width: 0;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.Demo__some-network__share-button {
+  cursor: pointer;
+}
+
+.Demo__some-network__share-button:hover:not(:active) {
+  opacity: 0.75;
+}
+
+.Demo__some-network__custom-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.copy-area {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 1rem;
+  padding: 0.3rem;
+  padding-right: 5rem;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+button {
+  letter-spacing: 1px;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.copy-feedback {
+  margin-left: 1rem;
+  visibility: hidden;
+}
+
+.copy-feedback.active {
+  visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+  .container,
+  .copy-area {
+    flex-direction: column;
+  }
+
+  .copy-feedback {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
